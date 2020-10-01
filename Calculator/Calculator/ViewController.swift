@@ -28,19 +28,18 @@ class ViewController: UIViewController {
     @IBAction private func buttons(_ sender: UIButton) {
         if result.text != "" && sender.tag != 10 && sender.tag != 15 {
             firstNum = Double(result.text!)!
-            
-            if sender.tag == 11 { // деление
-                 result.text = "/";
-            }
-            else if sender.tag == 12 { // умножение
-                result.text = "*";
-            }
-            else if sender.tag == 13 { // вычитание
-                result.text = "-";
-            }
-            else if sender.tag == 14 { // сложение
-                result.text = "+";
-                
+
+            switch sender.tag {
+            case 11:
+                result.text = "/"
+            case 12:
+                result.text = "*"
+            case 13:
+                result.text = "-"
+            case 14:
+                result.text = "+"
+            default:
+                break
             }
             
             operation = sender.tag
