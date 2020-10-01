@@ -26,8 +26,30 @@ class ViewController: UIViewController {
     }
     
     @IBAction private func buttons(_ sender: UIButton) {
-        if result.text != "" && sender.tag != 10 && sender.tag != 15 {
-            firstNum = Double(result.text!)!
+        guard let text = result.text, !text.isEmpty, let num = Double(text) else {
+            return
+        }
+
+        if sender.tag == 10 {
+            result.text = ""
+            firstNum = 0
+            operation = 0
+            numberFromScreen = 0
+        } else if sender.tag == 15 { // результат
+            switch sender.tag {
+            case 11:
+                result.text = String(firstNum / numberFromScreen)
+            case 12:
+                result.text = String(firstNum * numberFromScreen)
+            case 13:
+                result.text = String(firstNum - numberFromScreen)
+            case 14:
+                result.text = String(firstNum + numberFromScreen)
+            default:
+                break
+            }
+        } else {
+            firstNum = num
 
             switch sender.tag {
             case 11:
@@ -43,27 +65,7 @@ class ViewController: UIViewController {
             }
             
             operation = sender.tag
-            mathSign = true;
-        }
-        else if sender.tag == 15 { // результат
-            if operation == 11 {
-                result.text = String(firstNum / numberFromScreen)
-            }
-        else if operation == 12 {
-                result.text = String(firstNum * numberFromScreen)
-            }
-            else if operation == 13 {
-                result.text = String(firstNum - numberFromScreen)
-            }
-            else if operation == 14 {
-                result.text = String(firstNum + numberFromScreen)
-            }
-        }
-        else if sender.tag == 10 {
-            result.text = ""
-            firstNum = 0
-            operation = 0
-            numberFromScreen = 0
+            mathSign = true
         }
     }
 }
