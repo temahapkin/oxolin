@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2411F6EA252CCB2A00586406 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2411F6E9252CCB2A00586406 /* Operation.swift */; };
 		AC11A19E25110EA3004527BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11A19D25110EA3004527BD /* AppDelegate.swift */; };
 		AC11A1A025110EA3004527BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11A19F25110EA3004527BD /* SceneDelegate.swift */; };
 		AC11A1A225110EA3004527BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC11A1A125110EA3004527BD /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2411F6E9252CCB2A00586406 /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
 		AC11A19A25110EA3004527BD /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC11A19D25110EA3004527BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC11A19F25110EA3004527BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				AC11A19D25110EA3004527BD /* AppDelegate.swift */,
 				AC11A19F25110EA3004527BD /* SceneDelegate.swift */,
 				AC11A1A125110EA3004527BD /* ViewController.swift */,
+				2411F6E9252CCB2A00586406 /* Operation.swift */,
 				AC11A1A325110EA3004527BD /* Main.storyboard */,
 				AC11A1A625110EA4004527BD /* Assets.xcassets */,
 				AC11A1A825110EA4004527BD /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 				AC11A1A225110EA3004527BD /* ViewController.swift in Sources */,
 				AC11A19E25110EA3004527BD /* AppDelegate.swift in Sources */,
 				AC11A1A025110EA3004527BD /* SceneDelegate.swift in Sources */,
+				2411F6EA252CCB2A00586406 /* Operation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
